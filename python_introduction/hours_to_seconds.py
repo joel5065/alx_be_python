@@ -4,7 +4,7 @@
 hours = 2
 
 # Calculating the second in a given hou
-result = hours * 60 *60
+seconds = hours * 60 *60
 
 
-print(hours,"hour(s) is",result,"seconds")
+print(hours,"hour(s) is",seconds,"seconds")
