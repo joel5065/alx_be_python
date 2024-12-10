@@ -3,5 +3,8 @@
 # Creating a variable for hours
 hours = 2
 
-# Calculating the second in a given hour
-print(hours,"hour(s) is",hours * 3600,"seconds")
+# Calculating the second in a given hou
+result = hours * 60 *60
+
+
+print(hours,"hour(s) is",result,"seconds")
