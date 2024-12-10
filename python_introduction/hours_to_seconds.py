@@ -3,8 +3,8 @@
 # Creating a variable for hours
 hours = 2
 
-# Calculating the second in a given hou
-seconds = hours * 60 *60
+# Calculating the second in a given hours
 
+seconds = hours * 3600
 
 print(hours,"hour(s) is",seconds,"seconds")
