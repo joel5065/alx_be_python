@@ -1,4 +1,4 @@
-# Creating two variables number1 and number 2
+# Creating two variables number1 and number2
 number1 = 10
 number2 = 5
 
