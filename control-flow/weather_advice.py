@@ -5,6 +5,7 @@ user_response = str(input("What's the weather like today? (sunny/rainy/cold): ")
 
 if user_response == "sunny":
     print("Wear a t-shirt and sunglasses.")
+        
 elif user_response == "rainy":
     print("Don't forget your umbrella and a raincoat.")
 elif user_response == "cold":
