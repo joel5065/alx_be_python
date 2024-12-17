@@ -6,13 +6,13 @@ number2 = int(input("Enter the second number: "))
 operator = str(input("Choose the operation (+, -, *, /): "))
 
 match operator:
-    case operator if operator == "+":
+    case "+":
         print("The result is:", number1 + number2)
-    case operator if operator == "-":
+    case "-":
         print("The result is:", number1 - number2)
-    case operator if operator == "*":
+    case "*":
         print("The result is:", number1 * number2)
-    case operator if operator == "/":
+    case "/":
         if number2 == 0:
             print("Cannot divide by zero")   
         else:
