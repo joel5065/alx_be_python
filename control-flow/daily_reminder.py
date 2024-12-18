@@ -1,27 +1,33 @@
 ''' This script will ask the user for a single task, its priority level, and if it is time-sensitive'''
 
-task = str(input("Enter your task: "))
-priority = str(input("Enter the task priority(high/medium/low):"))
-time_bound = str(input("Is it time-bound? (yes/no): ")).lower()
+# Get user input for task description
+task = input("Enter your task description: ")
 
+  # Get user input for priority
+priority = input("Enter the priority (high, medium, low): ").lower()
+
+  # Get user input for time sensitivity
+time_bound = input("Is this task time-bound (yes or no): ").lower()
+
+  # Create the reminder message based on priority and time sensitivity
+reminder = f"The task '{task}' has a {priority} priority. "
+
+  # Use match case for priority and add urgency for time-bound tasks
 match priority:
-    case priority if priority == "high":
-        if time_bound == "yes":
-            print(f"Reminder: '{task}' is a high priority task that requires immediate attention today!")
-        else:
-            print(f"Note: '{task}' is not time bounded. Consider completing it when you have free time.")
-    case priority if priority == "medium":
-        if time_bound == "yes":
-            print(f"Reminder: The task '{task}' is a medium priority task that requires attention today!")
-        else:
-            print(f"Note: The task '{task}' is not time bounded. Consider completing it when you have free time.")
-    case priority if priority == "low":
-        if time_bound == "yes":
-            print(f"Note: The task '{task}' is  time bounded but low priority. Consider completing the sooner.")
-        else:
-            print(f"Note: The task '{task}' is a low priority task. Consider completing it when you have free time.")
+    case "high":
+      reminder += "Reminder: This is a high-priority task!"
+    case "medium":
+      reminder += "Reminder: The sooner you complete this task the better it will be. "  # No additional message for medium priority
+    case "low":
+      reminder += "Note: You can complete this at your convenience."
     case _:
-        print("Error! Make sure to pick the right answer!")
+      reminder = "Invalid priority. Please enter high, medium, or low."
+
+if time_bound == "yes":
+    reminder += " It requires immediate attention today!"
+
+  # Print the reminder message
+print(reminder)
         
     
 
