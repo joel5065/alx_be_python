@@ -1,9 +1,9 @@
-''' This script will ask the user for a single task, its priority level, and if it is time-sensitive'''
+''' This script will ask the user for a single task, its priority level, and if it is time-sensitive '''
 
 # Get user input for task description
 task = input("Enter your task description: ")
 
-  # Get user input for priority
+# Get user input for priority
 priority = input("Enter the priority (high, medium, low): ").lower()
 
   # Get user input for time sensitivity
