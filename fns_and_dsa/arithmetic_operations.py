@@ -1,6 +1,3 @@
-# This function when called will execute basics operation regarding the match case
-
-
 def perform_operation(num1: float, num2: float, operation: str):
     match operation:
         case "add":
