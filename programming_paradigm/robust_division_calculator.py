@@ -1,4 +1,4 @@
-def safe_divide(numerator, denominator):
+def safe_divide(numerator : float, denominator: float):
     try:
         result  = numerator / denominator
         print(f"The result of the division is {result:.1f}")
