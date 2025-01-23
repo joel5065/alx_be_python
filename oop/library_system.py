@@ -12,7 +12,7 @@ class EBook(Book):
         self.file_size = file_size
       
     def __str__(self):
-      details = super().__str__(self)
+      details = super().__str__()
       return f"EBook: {details}, {self.file_size}"
 
 class PrintBook(Book):
@@ -21,7 +21,7 @@ class PrintBook(Book):
         self.page_count = page_count
       
     def __str__(self):
-      details = super().__str__(self)
+      details = super().__str__()
       return f"PrintBook: {details}, {self.page_count}"
 
 
