@@ -2,7 +2,9 @@ class Book:
   def __init__(self, title, author):
       self.title = title
       self.author = title
-
+  def __str__(self):
+     print(f"- {self.title} written by {self.author}")
+   
 
 class EBook(Book):
     def __init__(self, title, author, file_size):
