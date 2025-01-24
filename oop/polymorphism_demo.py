@@ -4,9 +4,16 @@ class Shape:
     raise NotImplementedError
 
 class Rectangle(Shape):
-  def area(self, length, width):
+  def __init__(self, length, width):
+    self.length = length
+    self.width = width
+    
+  def area(length, width):
     return self.length * self.width
 
 class Circle(Shape):
-  def area(self, radius):
-    return self.radius * math.pi
+  def __init__(self, radius):
+    self.radius = radius
+    
+  def area(radius):
+    return radius ** 2 * math.pi
