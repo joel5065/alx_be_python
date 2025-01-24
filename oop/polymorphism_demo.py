@@ -4,9 +4,9 @@ class Shape:
     raise NotImplementedError
 
 class Rectangle(Shape):
-  def area(length, width):
-    return length * width
+  def area(self, length, width):
+    return self.length * self.width
 
 class Circle(Shape):
-  def area(radius):
-    return radius * math.pi
+  def area(self, radius):
+    return self.radius * math.pi
